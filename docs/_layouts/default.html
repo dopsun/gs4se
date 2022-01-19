@@ -19,10 +19,67 @@
 </head>
 
 <body>
-    <div style="display: flex; flex-flow: column wrap; width: 100%">
+    <header class="navbar navbar-expand-md navbar-dark bd-navbar">
+        <h1>{{ site.title | default: site.github.repository_name }}</h1>
+        <!--<div>{{ site.description | default: site.github.project_tagline }}</div>-->
+    </header>
+
+    <div class="container-xxl my-md-4 bd-layout">
+        <aside class="bd-sidebar">
+            <nav class="collapse bd-links" id="bd-docs-nav">
+                <ul class="list-unstyled mb-0 py-3 pt-md-1">
+                    <li class="mb-1">
+                        <button class="btn d-inline-flex align-items-center rounded">
+                            Getting started
+                        </button>
+
+                        <div class="collapse show" id="getting-started-collapse">
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a href="/docs/5.1/getting-started/introduction/" class="d-inline-flex align-items-center rounded active" aria-current="page">Introduction</a></li>
+                                <li><a href="/docs/5.1/getting-started/download/" class="d-inline-flex align-items-center rounded">Download</a></li>
+                                <li><a href="/docs/5.1/getting-started/contents/" class="d-inline-flex align-items-center rounded">Contents</a></li>
+                                <li><a href="/docs/5.1/getting-started/browsers-devices/" class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a></li>
+                                <li><a href="/docs/5.1/getting-started/javascript/" class="d-inline-flex align-items-center rounded">JavaScript</a></li>
+                                <li><a href="/docs/5.1/getting-started/webpack/" class="d-inline-flex align-items-center rounded">Webpack</a></li>
+                                <li><a href="/docs/5.1/getting-started/parcel/" class="d-inline-flex align-items-center rounded">Parcel</a></li>
+                                <li><a href="/docs/5.1/getting-started/accessibility/" class="d-inline-flex align-items-center rounded">Accessibility</a></li>
+                                <li><a href="/docs/5.1/getting-started/rfs/" class="d-inline-flex align-items-center rounded">RFS</a></li>
+                                <li><a href="/docs/5.1/getting-started/rtl/" class="d-inline-flex align-items-center rounded">RTL</a></li>
+                                <li><a href="/docs/5.1/getting-started/contribute/" class="d-inline-flex align-items-center rounded">Contribute</a></li>
+                            </ul>
+                          </div>
+                    </li>
+
+                    <li class="mb-1">
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
+                          Customize
+                        </button>
+                
+                        <div class="collapse" id="customize-collapse">
+                          <ul class="list-unstyled fw-normal pb-1 small">
+                              <li><a href="/docs/5.1/customize/overview/" class="d-inline-flex align-items-center rounded">Overview</a></li>
+                              <li><a href="/docs/5.1/customize/sass/" class="d-inline-flex align-items-center rounded">Sass</a></li>
+                              <li><a href="/docs/5.1/customize/options/" class="d-inline-flex align-items-center rounded">Options</a></li>
+                              <li><a href="/docs/5.1/customize/color/" class="d-inline-flex align-items-center rounded">Color</a></li>
+                              <li><a href="/docs/5.1/customize/components/" class="d-inline-flex align-items-center rounded">Components</a></li>
+                              <li><a href="/docs/5.1/customize/css-variables/" class="d-inline-flex align-items-center rounded">CSS variables</a></li>
+                              <li><a href="/docs/5.1/customize/optimize/" class="d-inline-flex align-items-center rounded">Optimize</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="bd-main order-1">
+            {{ content }}
+        </main>
+    </div>
+
+    <!-- <div style="display: flex; flex-flow: column wrap; width: 100%">
         <div style="display: flex; flex-flow: row wrap;">
             <h1>{{ site.title | default: site.github.repository_name }}</h1>
-            <!--<div>{{ site.description | default: site.github.project_tagline }}</div>-->
+            <div>{{ site.description | default: site.github.project_tagline }}</div>
         </div>
         <div style="display: flex; flex-flow: row nowrap;">
             <div style="display: flex; flex-flow: column wrap; width: 220px;">
@@ -60,7 +117,7 @@
                 {{ content }}
             </div>
         </div>
-    </div>
+    </div> -->
 </body>
 
 </html>
