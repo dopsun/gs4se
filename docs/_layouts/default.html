@@ -16,6 +16,30 @@
 </head>
 
 <body>
+    <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
+        <div style="display: flex; flex-direction: column; flex-wrap: nowrap;">
+            <h1>{{ site.title | default: site.github.repository_name }}</h1>
+            <div>{{ site.description | default: site.github.project_tagline }}</div>
+        </div>
+        <div style="display: flex; flex-direction: column; flex-wrap: nowrap;">
+            <div style="display: flex; flex-direction: row; flex-wrap: nowrap; width: 220px;">
+                <ul>
+                    <li>Preface</li>
+                    <li>Prepration</li>
+                    <li>
+                        Technology
+                        <ul>
+                            <li>Memory</li>
+                        </ul>
+                    </li>
+                </ul>
+                </div>
+            <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
+                This is content.
+            </div>
+        </div>
+    </div>
+
     <div class="wrapper">
         <header>
             <ul>
