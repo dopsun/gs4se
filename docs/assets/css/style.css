@@ -54,6 +54,7 @@ body {
     text-decoration: none;
     color: #555;
     white-space: nowrap;
+    font-weight: 300;
 }
 
 .bk-container .bk-toc a:hover {
@@ -61,7 +62,7 @@ body {
 }
 
 .bk-container .bk-toc li {
-    padding: 0.2em 0em;
+    padding: 0.3em 0em;
 }
 
 .bk-container .bk-toc .list-nested {
