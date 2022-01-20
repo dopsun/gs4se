@@ -19,107 +19,120 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-md navbar-dark bd-navbar">
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <!--<div>{{ site.description | default: site.github.project_tagline }}</div>-->
-    </header>
+    <div class="bk-container">
+        <header class="bk-header navbar navbar-expand-md navbar-dark">
+            <nav class="bk-nav-main">
+                <h1>GS4SE</h1>
+            </nav>
+        </header>
+        <div class="bk-body">
+            <aside class="bk-toc">
+                <ul class="list-unstyled">
+                    <li>
+                        <div class="non-leaf">
+                            Getting started
+                        </div>
 
-    <div class="container-xxl">
-        <div class="row">
-            <aside class="col-2">
-                <nav class="collapse bd-links" id="bd-docs-nav">
-                    <ul class="list-unstyled mb-0 py-3 pt-md-1">
-                        <li class="mb-1">
-                            <button class="btn d-inline-flex align-items-center rounded">
-                                Getting started
-                            </button>
-    
-                            <div class="collapse show" id="getting-started-collapse">
-                                <ul class="list-unstyled fw-normal pb-1 small">
-                                    <li><a href="/docs/5.1/getting-started/introduction/" class="d-inline-flex align-items-center rounded active" aria-current="page">Introduction</a></li>
-                                    <li><a href="/docs/5.1/getting-started/download/" class="d-inline-flex align-items-center rounded">Download</a></li>
-                                    <li><a href="/docs/5.1/getting-started/contents/" class="d-inline-flex align-items-center rounded">Contents</a></li>
-                                    <li><a href="/docs/5.1/getting-started/browsers-devices/" class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a></li>
-                                    <li><a href="/docs/5.1/getting-started/javascript/" class="d-inline-flex align-items-center rounded">JavaScript</a></li>
-                                    <li><a href="/docs/5.1/getting-started/webpack/" class="d-inline-flex align-items-center rounded">Webpack</a></li>
-                                    <li><a href="/docs/5.1/getting-started/parcel/" class="d-inline-flex align-items-center rounded">Parcel</a></li>
-                                    <li><a href="/docs/5.1/getting-started/accessibility/" class="d-inline-flex align-items-center rounded">Accessibility</a></li>
-                                    <li><a href="/docs/5.1/getting-started/rfs/" class="d-inline-flex align-items-center rounded">RFS</a></li>
-                                    <li><a href="/docs/5.1/getting-started/rtl/" class="d-inline-flex align-items-center rounded">RTL</a></li>
-                                    <li><a href="/docs/5.1/getting-started/contribute/" class="d-inline-flex align-items-center rounded">Contribute</a></li>
+                        <ul class="list-unstyled list-nested">
+                            <li><a href="/docs/5.1/getting-started/introduction/" class="non-leaf"
+                                    aria-current="page">Introduction</a>
+
+                                <ul class="list-unstyled list-nested">
+                                    <li><a href="/docs/5.1/getting-started/introduction/"
+                                            class="d-inline-flex align-items-center rounded active"
+                                            aria-current="page">Introduction</a></li>
+                                    <li><a href="/docs/5.1/getting-started/download/"
+                                            class="d-inline-flex align-items-center rounded">Download</a></li>
+                                    <li><a href="/docs/5.1/getting-started/contents/"
+                                            class="d-inline-flex align-items-center rounded">Contents</a></li>
+                                    <li><a href="/docs/5.1/getting-started/browsers-devices/"
+                                            class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a>
+                                    </li>
+                                    <li><a href="/docs/5.1/getting-started/javascript/"
+                                            class="d-inline-flex align-items-center rounded">JavaScript</a></li>
+                                    <li><a href="/docs/5.1/getting-started/webpack/"
+                                            class="d-inline-flex align-items-center rounded">Webpack</a></li>
+                                    <li><a href="/docs/5.1/getting-started/parcel/"
+                                            class="d-inline-flex align-items-center rounded">Parcel</a></li>
+                                    <li><a href="/docs/5.1/getting-started/accessibility/"
+                                            class="d-inline-flex align-items-center rounded">Accessibility</a></li>
+                                    <li><a href="/docs/5.1/getting-started/rfs/"
+                                            class="d-inline-flex align-items-center rounded">RFS</a></li>
+                                    <li><a href="/docs/5.1/getting-started/rtl/"
+                                            class="d-inline-flex align-items-center rounded">RTL</a></li>
+                                    <li><a href="/docs/5.1/getting-started/contribute/"
+                                            class="d-inline-flex align-items-center rounded">Contribute</a></li>
                                 </ul>
-                              </div>
-                        </li>
-    
-                        <li class="mb-1">
-                            <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customize-collapse" aria-expanded="false">
-                              Customize
-                            </button>
-                    
-                            <div class="collapse" id="customize-collapse">
-                              <ul class="list-unstyled fw-normal pb-1 small">
-                                  <li><a href="/docs/5.1/customize/overview/" class="d-inline-flex align-items-center rounded">Overview</a></li>
-                                  <li><a href="/docs/5.1/customize/sass/" class="d-inline-flex align-items-center rounded">Sass</a></li>
-                                  <li><a href="/docs/5.1/customize/options/" class="d-inline-flex align-items-center rounded">Options</a></li>
-                                  <li><a href="/docs/5.1/customize/color/" class="d-inline-flex align-items-center rounded">Color</a></li>
-                                  <li><a href="/docs/5.1/customize/components/" class="d-inline-flex align-items-center rounded">Components</a></li>
-                                  <li><a href="/docs/5.1/customize/css-variables/" class="d-inline-flex align-items-center rounded">CSS variables</a></li>
-                                  <li><a href="/docs/5.1/customize/optimize/" class="d-inline-flex align-items-center rounded">Optimize</a></li>
-                              </ul>
-                            </div>
-                          </li>
-                    </ul>
-                </nav>
+                            </li>
+                            <li><a href="/docs/5.1/getting-started/download/"
+                                    class="d-inline-flex align-items-center rounded">Download</a></li>
+                            <li><a href="/docs/5.1/getting-started/contents/"
+                                    class="d-inline-flex align-items-center rounded">Contents</a></li>
+                            <li><a href="/docs/5.1/getting-started/browsers-devices/"
+                                    class="d-inline-flex align-items-center rounded">Browsers &amp; devices</a>
+                            </li>
+                            <li><a href="/docs/5.1/getting-started/javascript/"
+                                    class="d-inline-flex align-items-center rounded">JavaScript</a></li>
+                            <li><a href="/docs/5.1/getting-started/webpack/"
+                                    class="d-inline-flex align-items-center rounded">Webpack</a></li>
+                            <li><a href="/docs/5.1/getting-started/parcel/"
+                                    class="d-inline-flex align-items-center rounded">Parcel</a></li>
+                            <li><a href="/docs/5.1/getting-started/accessibility/"
+                                    class="d-inline-flex align-items-center rounded">Accessibility</a></li>
+                            <li><a href="/docs/5.1/getting-started/rfs/"
+                                    class="d-inline-flex align-items-center rounded">RFS</a></li>
+                            <li><a href="/docs/5.1/getting-started/rtl/"
+                                    class="d-inline-flex align-items-center rounded">RTL</a></li>
+                            <li><a href="/docs/5.1/getting-started/contribute/"
+                                    class="d-inline-flex align-items-center rounded">Contribute</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <div class="non-leaf">
+                            Customization
+                        </div>
+
+                        <ul class="list-unstyled list-nested">
+                            <li><a href="/docs/5.1/customize/overview/"
+                                    class="d-inline-flex align-items-center rounded">Overview</a></li>
+                            <li><a href="/docs/5.1/customize/sass/"
+                                    class="d-inline-flex align-items-center rounded">Sass</a></li>
+                            <li><a href="/docs/5.1/customize/options/"
+                                    class="d-inline-flex align-items-center rounded">Options</a></li>
+                            <li><a href="/docs/5.1/customize/color/"
+                                    class="d-inline-flex align-items-center rounded">Color</a></li>
+                            <li><a href="/docs/5.1/customize/components/"
+                                    class="d-inline-flex align-items-center rounded">Components</a></li>
+                            <li><a href="/docs/5.1/customize/css-variables/"
+                                    class="d-inline-flex align-items-center rounded">CSS variables</a></li>
+                            <li><a href="/docs/5.1/customize/optimize/"
+                                    class="d-inline-flex align-items-center rounded">Optimize</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        {% if site.github.is_project_page %}
+                        <div style="white-space: nowrap;" class="header">This project is maintained by <a
+                                class="header name" href="{{ site.github.owner_url }}">{{
+                                site.github.owner_name }}</a></div>
+                        {% endif %}
+
+                        {% if site.github.is_user_page %}
+                        <div style="white-space: nowrap;"><a class="buttons github"
+                                href="{{ site.github.owner_url }}">GitHub Profile</a></div>
+                        {% endif %}
+
+                        <div style="white-space: nowrap;"><small>Hosted on <a href="https://pages.github.com">GitHub
+                                    Pages</a></small></div>
+                    </li>
             </aside>
-    
-            <main class="col-10">
+
+            <main class="bk-content">
                 {{ content }}
             </main>
         </div>
-   </div>
-
-    <!-- <div style="display: flex; flex-flow: column wrap; width: 100%">
-        <div style="display: flex; flex-flow: row wrap;">
-            <h1>{{ site.title | default: site.github.repository_name }}</h1>
-            <div>{{ site.description | default: site.github.project_tagline }}</div>
-        </div>
-        <div style="display: flex; flex-flow: row nowrap;">
-            <div style="display: flex; flex-flow: column wrap; width: 220px;">
-                <ul>
-                    <li>Preface</li>
-                    <li>Prepration</li>
-                    <li>
-                        Technology
-                        <ul>
-                            <li>Memory</li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <span style="flex: 1 1 auto;"></span>
-
-                <div>
-                    {% if site.github.is_project_page %}
-                    <p class="header">This project is maintained by <a class="header name"
-                            href="{{ site.github.owner_url }}">{{
-                            site.github.owner_name }}</a></p>
-                    {% endif %}
-
-                    {% if site.github.is_user_page %}
-                    <ul>
-                        <li><a class="buttons github" href="{{ site.github.owner_url }}">GitHub Profile</a></li>
-                    </ul>
-                    {% endif %}
-
-                    <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky
-                            theme</small></p>
-                </div>
-            </div>
-            <div style="display: flex; flex-flow: column wrap;">
-                {{ content }}
-            </div>
-        </div>
-    </div> -->
+    </div>
 </body>
 
 </html>
