@@ -77,8 +77,170 @@ body {
     width: 100%;
 
     padding: 1rem 1rem;
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    vertical-align: baseline;
 }
 
 .bk-container .bk-toc .footer {
     padding-top: 2em;
+}
+
+.bk-container .bk-content h1, h2, h3, h4, h5, h6 {
+    color:#232323;
+    margin:36px 0 10px;
+}
+
+.bk-container .bk-content h1, h2, h3 {
+    line-height: 1.3;
+	font-weight: normal;
+
+    display: block;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+}
+
+.bk-container .bk-content h1 {
+    font-size: 30px;
+}
+
+.bk-container .bk-content h2 {
+    font-size: 24px;
+}
+
+.bk-container .bk-content h3 {
+    font-size: 18px;
+}
+
+.bk-container .bk-content h4, h5, h6 {
+	font-weight: 700;
+    font-size: 1rem;
+}
+
+.bk-container .bk-content a {
+    color:#C30000;
+    font-weight:200;
+    text-decoration:none;
+}
+  
+.bk-container .bk-content a:hover {
+      text-decoration: underline;
+}
+  
+.bk-container .bk-content a small {
+      font-size: 12px;
+}
+  
+.bk-container .bk-content em {
+      font-style: italic;
+}
+  
+.bk-container .bk-content strong {
+    font-weight:700;
+}
+  
+.bk-container .bk-content ul {
+    list-style-position: inside;
+    list-style: disc;
+    padding-left: 25px;
+}
+  
+.bk-container .bk-content ol {
+    list-style-position: inside;
+    list-style: decimal;
+    padding-left: 25px;
+}
+  
+.bk-container .bk-content blockquote {
+    margin: 0;
+    padding: 0 0 0 20px;
+    font-style: italic;
+}
+  
+.bk-container .bk-content dl, dt, dd, dl p {
+      color: #444;
+}
+  
+.bk-container .bk-content dl dt {
+    font-weight: bold;
+}
+  
+.bk-container .bk-content dl dd {
+    padding-left: 20px;
+    font-style: italic;
+}
+  
+.bk-container .bk-content dl p {
+    padding-left: 20px;
+    font-style: italic;
+}
+  
+.bk-container .bk-content hr {
+    border:0;
+    background:#ccc;
+    height:1px;
+    margin:0 0 24px;
+}
+  
+/* Images */
+  
+.bk-container .bk-content img {
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+    padding: 5px;
+    margin: 10px 0 32px 0;
+    border: 1px solid #ccc;
+}
+  
+.bk-container .bk-content p img, .emoji {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    border: none;
+}
+  
+/* Code blocks */
+  
+.bk-container .bk-content code, pre {
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+    color:#000;
+    font-size:14px;
+}
+  
+.bk-container .bk-content pre {
+    padding: 4px 12px;
+    background: #FDFEFB;
+    border-radius:4px;
+    border:1px solid #D7D8C8;
+    overflow: auto;
+    overflow-y: hidden;
+    margin-bottom: 32px;
+}
+  
+  
+/* Tables */
+  
+.bk-container .bk-content table {
+    width:100%;
+    border: 1px solid #ccc;
+    margin-bottom: 32px;
+    text-align: left;
+}
+  
+.bk-container .bk-content th {
+    font-family: 'Arvo', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 10px;
+    background: #03a9f4;
+    color: #FDFEFB;
+}
+  
+.bk-container .bk-content td {
+    padding: 10px;
+    background: #ccc;
 }
