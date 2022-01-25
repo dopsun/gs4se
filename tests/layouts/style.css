@@ -74,8 +74,9 @@ body {
     flex-direction: column;
     flex: 0 0 100% - 240px;
     overflow: scroll;
+    width: 100%;
 
-    padding: 0.75rem 0.75rem;
+    padding: 1rem 1rem;
 }
 
 .bk-container .bk-toc .footer {
