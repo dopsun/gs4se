@@ -19,3 +19,7 @@ In an era when more phones sold than computers, keyboard is a thing replaced by 
 * Speed matters, only when accuracy guaranteed.
 * One more thing: cut your nails, if you are ok with it. Otherwise, you key think about how to improve the accuracy and speed with alternative ways and stick to it. For example, find a keyboard which is long nail friendly.
 ** Tips: usually this is not available in your working enviornment!
+
+## Practice
+
+There are tools to practice keyboarding and see the accuracy and speed improvements.
